@@ -1,47 +1,116 @@
-## 使用说明
+# 使用说明/USE
 
-##### react-highcharts
+## react-highcharts
+```js
+npm install react-resume
 ```
-import beautyHighcharts from 'react-beauty-highcharts';
-const ReactHighcharts = require('react-highcharts'); 
 
-let config = beautyHighcharts.doubleLine()
-config.series[0].data =[
-      369, 640, 1005, 1436, 2063, 3057, 4618, 6444, 9822, 15468,
-      20434, 24126, 27387, 29459, 31056, 31982, 32040, 31233, 29224, 27342,
-      26662, 26956, 27912, 28999, 28965, 27826, 25579, 25722, 24826, 24605,
-      24304, 23464, 23708, 24099, 24357, 24237, 24401, 24344, 23586, 22380,
-      21004, 17287, 14747, 13076, 12555, 12144, 11009, 10950, 10871, 10824,
-      10577, 10527, 10475, 10421, 10358, 10295, 10104, 9914, 9620, 9326,
-      5113, 5113, 4954, 4804, 4761, 4717, 4368, 4018
-    ]
-    config.series[1].data =[
-      5, 25, 50, 120, 150, 200, 426, 660, 869, 1060,
-      1605, 2471, 3322, 4238, 5221, 6129, 7089, 8339, 9399, 10538,
-      11643, 13092, 14478, 15915, 17385, 19055, 21205, 23044, 25393, 27935,
-      30062, 32049, 33952, 35804, 37431, 39197, 45000, 43000, 41000, 39000,
-      37000, 35000, 33000, 31000, 29000, 27000, 25000, 24000, 23000, 22000,
-      21000, 20000, 19000, 18000, 18000, 17000, 16000, 15537, 14162, 12787,
-      12600, 11400, 5500, 4512, 4502, 4502, 4500, 4500
-    ]
-render() {
-    <ReactHighcharts config ={config}></ReactHighcharts>
+
+```js
+import Resume from "react-resume"
+<Resume R={R}></Resume>
+```
+
+
+```js
+const R = {
+  avatar: 'https://gimg2.baidu.com/image_search/src=http%3A%2F%2Fww3.sinaimg.cn%2Fmw690%2F001M3Mcbly1gjvrsyggztj61tm1tr15q02.jpg&refer=http%3A%2F%2Fwww.sina.com&app=2002&size=f9999,10000&q=a80&n=0&g=0n&fmt=jpeg?sec=1615360296&t=3dc56c54c1eadc6e08e5d0fc085b631a', // remote 地址
+  position:'前端工程师',
+  workExperience:3,
+  city:'北京',
+  university:'斯坦福大学',
+  universityYear:'本科2014-2018年',
+  birthday:'1996.10.1',
+  major:'土木工程',
+  contact:'188 1888 7979',
+  mail:'799999@gmail.com',
+  github:'github.com/iu',
+  page:2,
+  company:[
+    {
+      name:'谷歌歌',
+      year:'2020.1 - 现在',
+      project:[{
+        name: '小雅音响',
+        desc: '数据管理平台(vue+element-ui)',
+        detailDesc:'任务增删改查等模块, 任务增删改查等模块, 任务增删改查等模块, 任务增删改查等模块',
+        struct:'采用Vue-SPA技术方案，vue-cli搭建，vue-router跳转，webpack打包压缩，前后端分离，axois CORS 跨域技术，采用scss嵌套样式，使用阿里矢量图标库，使用了element-ui框架',
+        highlights: [
+          '增强页面复用性，编辑添加页面合并，减少冗余 登陆页使用流星雨动效制作，提高用户体验',
+          '增强页面复用性，编辑添加页面合并，减少冗余 登陆页使用流星雨动效制作，提高用户体验，增强页面复用性，编辑添加页面合并，减少冗余 登陆页使用流星雨动效制作，提高用户体验',
+          '增强页面复用性，编辑添加页面合并，减少冗余 登陆页使用流星雨动效制作，提高用户体验',
+        ],
+        // result:'提高运营工作效率，减少沟通成本',
+        // label:['vue','webapck','element-ui','less','SPA']
+        },{
+          name: '小雅音响2',
+          desc: '数据管理平台(vue+element-ui)',
+          detailDesc:'任务增删改查等模块, 任务增删改查等模块, 任务增删改查等模块, 任务增删改查等模块',
+          struct:'采用Vue-SPA技术方案，vue-cli搭建，vue-router跳转，webpack打包压缩，前后端分离，axois CORS 跨域技术，采用scss嵌套样式，使用阿里矢量图标库，使用了element-ui框架',
+          highlights: [
+            '增强页面复用性，编辑添加页面合并，减少冗余 登陆页使用流星雨动效制作，提高用户体验',
+            '增强页面复用性，编辑添加页面合并，减少冗余 登陆页使用流星雨动效制作，提高用户体验，增强页面复用性，编辑添加页面合并，减少冗余 登陆页使用流星雨动效制作，提高用户体验',
+            '增强页面复用性，编辑添加页面合并，减少冗余 登陆页使用流星雨动效制作，提高用户体验',
+          ],
+        },{
+          name: '小雅音响3',
+          desc: '数据管理平台(vue+element-ui)',
+          detailDesc:'任务增删改查等模块, 任务增删改查等模块, 任务增删改查等模块, 任务增删改查等模块',
+          struct:'采用Vue-SPA技术方案，vue-cli搭建，vue-router跳转，webpack打包压缩，前后端分离，axois CORS 跨域技术，采用scss嵌套样式，使用阿里矢量图标库，使用了element-ui框架',
+          highlights: [
+            '增强页面复用性，编辑添加页面合并，减少冗余 登陆页使用流星雨动效制作，提高用户体验',
+            '增强页面复用性，编辑添加页面合并，减少冗余 登陆页使用流星雨动效制作，提高用户体验，增强页面复用性，编辑添加页面合并，减少冗余 登陆页使用流星雨动效制作，提高用户体验',
+          ],
+        },
+      ],
+    },
+    {
+      name:'谷歌歌2',
+      year:'2020.1 - 现在',
+      project:[{
+        name: '小雅音响',
+        desc: '数据管理平台(vue+element-ui)',
+        detailDesc:'任务增删改查等模块, 任务增删改查等模块, 任务增删改查等模块, 任务增删改查等模块',
+        struct:'采用Vue-SPA技术方案，vue-cli搭建，vue-router跳转，webpack打包压缩，前后端分离，axois CORS 跨域技术，采用scss嵌套样式，使用阿里矢量图标库，使用了element-ui框架',
+        highlights: [
+          '增强页面复用性，编辑添加页面合并，减少冗余 登陆页使用流星雨动效制作，提高用户体验',
+          '增强页面复用性，编辑添加页面合并，减少冗余 登陆页使用流星雨动效制作，提高用户体验，增强页面复用性，编辑添加页面合并，减少冗余 登陆页使用流星雨动效制作，提高用户体验',
+          '增强页面复用性，编辑添加页面合并，减少冗余 登陆页使用流星雨动效制作，提高用户体验',
+        ],
+        // result:'提高运营工作效率，减少沟通成本',
+        // label:['vue','webapck','element-ui','less','SPA']
+        },{
+          name: '小雅音响2',
+          desc: '数据管理平台(vue+element-ui)',
+          detailDesc:'任务增删改查等模块, 任务增删改查等模块, 任务增删改查等模块, 任务增删改查等模块',
+          struct:'采用Vue-SPA技术方案，vue-cli搭建，vue-router跳转，webpack打包压缩，前后端分离，axois CORS 跨域技术，采用scss嵌套样式，使用阿里矢量图标库，使用了element-ui框架',
+          highlights: [
+            '增强页面复用性，编辑添加页面合并，减少冗余 登陆页使用流星雨动效制作，提高用户体验',
+            '增强页面复用性，编辑添加页面合并，减少冗余 登陆页使用流星雨动效制作，提高用户体验，增强页面复用性，编辑添加页面合并，减少冗余 登陆页使用流星雨动效制作，提高用户体验',
+            '增强页面复用性，编辑添加页面合并，减少冗余 登陆页使用流星雨动效制作，提高用户体验',
+          ],
+        },{
+          name: '小雅音响3',
+          desc: '数据管理平台(vue+element-ui)',
+          detailDesc:'任务增删改查等模块, 任务增删改查等模块, 任务增删改查等模块, 任务增删改查等模块',
+          struct:'采用Vue-SPA技术方案，vue-cli搭建，vue-router跳转，webpack打包压缩，前后端分离，axois CORS 跨域技术，采用scss嵌套样式，使用阿里矢量图标库，使用了element-ui框架',
+          highlights: [
+            '增强页面复用性，编辑添加页面合并，减少冗余 登陆页使用流星雨动效制作，提高用户体验',
+            '增强页面复用性，编辑添加页面合并，减少冗余 登陆页使用流星雨动效制作，提高用户体验，增强页面复用性，编辑添加页面合并，减少冗余 登陆页使用流星雨动效制作，提高用户体验',
+          ],
+        },
+      ],
+    },
+  ],
+  skill:[
+    '熟练掌握html5,css',
+    '熟练了解js技术',
+    '深入了解vue底层原理,熟练运用vue全家桶',
+    '熟练兼容性和性能优化',
+    '深入了解vue底层原理,熟练运用vue全家桶',
+    '熟练使用react',
+    '深入了解vue底层原理,熟练运用vue全家桶',
+    '熟练兼容性和性能优化'
+  ]
 }
 ```
-![](images/1.png)
-
-pink粉色
-```
-let config = beautyHighcharts.doubleLine(['pink'])
-```
-![](images/2.jpg)
-
-columns
-```
-import beautyHighcharts from 'react-beauty-highcharts';
-
-let config = beautyHighcharts.columns()
-
-```
-![](images/3.jpg)
-

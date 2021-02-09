@@ -1,5 +1,5 @@
 {
-  "name": "react-beauty-highcharts",
+  "name": "react-resume",
   "version": "1.0.2",
   "files": [
     "dist"
@@ -9,7 +9,7 @@
   "private": false,
   "repository": {
     "type": "git",
-    "url": "https://github.com/Carrie999/react-beauty-highcharts"
+    "url": "https://github.com/Carrie999/react-resume"
   },
   "directories": {
     "example": "examples"
